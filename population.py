@@ -37,7 +37,6 @@ def new_gen(): #creates new generation
     new_list.append(prince)
 
     parents_list = choose_parents()
-    print(len(parents_list))
     for i in range(dot_count-2):
         par_index = parents_list[i]
         parent = dots_list[par_index]
