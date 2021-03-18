@@ -1,0 +1,1 @@
+To run this program, make sure you have pygame installed
