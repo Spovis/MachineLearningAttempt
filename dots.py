@@ -17,6 +17,7 @@ class Dot:
         self.fitness = 0
         self.is_best = False
         self.color = [255,255,255]
+        self.color = [random.randint(1,255),random.randint(1,255),random.randint(1,255)]
         self.reached_goal = False
         self.checks_reached = []
 
@@ -69,5 +70,5 @@ class Dot:
     def birth(self): #creates new dot with same brain
         child_brain = self.brain.clone()
         baby = Dot(child_brain)
-        #baby.color = self.color #color is genetic, allows you to see the genetic algorithim at work
+        baby.color = self.color #color is genetic, allows you to see the genetic algorithim at work
         return baby

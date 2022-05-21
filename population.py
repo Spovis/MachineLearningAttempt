@@ -30,8 +30,8 @@ def new_gen(): #creates new generation
     global dot_count
     new_list = []
     king = dots_list[find_king()].birth() #king lives on
-    king.color = [255,20,20]
-    king.radius = 4
+    #king.color = [255,20,20]
+    king.radius = 5
     prince = dots_list[find_king()].birth() #king always has a child which is mutated
     new_list.append(king)
     new_list.append(prince)
